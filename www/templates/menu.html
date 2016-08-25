@@ -1,0 +1,62 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-stable">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear ion-navicon BTNright" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+
+    <ion-content>
+        <div class="item menu_prof">
+            <img src="img/pic.png" class="mnu_avatar">
+            <h2>Анна Атлетова</h2>
+            <p>подписка до 25.02.2017(320 д.)</p>
+        </div>
+      <ion-list>
+<!--
+        <ion-item menu-close ng-click="login()">
+        <img src="img/profile.png" class="menu_icon">
+            <p>Login</p>
+        </ion-item>
+-->
+        <ion-item menu-close href="#/app/profile">
+        <img src="img/profile.png" class="menu_icon">
+            <p>Профиль</p>
+        </ion-item>
+        <ion-item menu-close href="#/app/progress">
+        <img src="img/progress.png" class="menu_icon">
+            <p>Мой Прогресс</p>
+        </ion-item>
+        <ion-item menu-close href="#/app/training">
+        <img src="img/training.png" class="menu_icon">
+          <p>Тренировки</p>
+        </ion-item>
+        <ion-item menu-close href="#/app/food">
+        <img src="img/food.png" class="menu_icon" id="food_icon">
+            <p>Питание</p>
+        </ion-item>
+        <ion-item menu-close href="#/app/news">
+        <img src="img/news.png" class="menu_icon">
+          <p>Блог</p>
+        </ion-item>
+        <ion-item menu-close href="#/app/chat">
+        <img src="img/contact.png" class="menu_icon">
+            <p>Связь с тренером</p>
+        </ion-item>
+        <ion-item menu-close href="#/app/help">
+        <img src="img/settings.png" class="menu_icon">
+            <p>Справка и новости</p>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+
+  </ion-side-menu>
+</ion-side-menus>

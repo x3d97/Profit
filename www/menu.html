@@ -1,0 +1,24 @@
+<ion-modal-view>
+  <ion-content ng-controller="MyContr" class="form_block">
+
+      <img src="img/logo_l.png" class="login_logo">
+
+    <form ng-submit="getData()">
+      <div class="input_block">
+        <label class="item item-input">
+          <span class="input-label"><img src="img/login.png"></span>
+          <input type="text" ng-model="data.email" placeholder="email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label"><img src="img/pass.png"></span>
+          <input type="password"  placeholder="Пароль" name="senha" ng-model="data.password">
+        </label>
+        <div class="item"><a href="#" class="pull-left">Забыли пароль?</a><a href="#"  class="pull-right">Регистрация</a></div>
+        <label class="item">
+          <button  class="button button-block" type="submit">Войти</button>
+        </label>
+      </div>
+    </form>
+
+  </ion-content>
+</ion-modal-view>

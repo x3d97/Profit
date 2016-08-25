@@ -1,0 +1,46 @@
+<ion-view>
+    <ion-nav-title>Мой прогресс</ion-nav-title>
+  <ion-content  ng-controller="GraphCtrl">
+      <div class="stats">
+          <div class="row">
+            <div class="col col-45"><img src="img/female.png"></div>
+            <div class="col col-55">
+                <p>Замерам 8 дней (29.04.16)</p>
+                <div class="stat_list">
+                    <ul class="fr_sp">
+                        <li><span>Плечо</span><span class="numb">29</span><span><img src="img/down.png"></span></li>
+                        <li><span>Бицепс</span><span class="numb">30</span><span></span></li>
+                        <li><span>Рука</span><span class="numb">24</span><span><img src="img/up.png"></span></li>
+                    </ul>
+                    <ul class="sc_sp">
+                        <li><span>Грудь</span><span class="numb">92</span><span><img src="img/down.png"></span></li>
+                        <li><span>Талия</span><span class="numb">56</span><span></span></li>
+                        <li><span>Бедра</span><span class="numb">92</span><span><img src="img/up.png"></span></li>
+                    </ul>
+                    <ul class="th_sp">
+                        <li><span>Бедро</span><span class="numb">58</span><span><img src="img/down.png"></span></li>
+                        <li><span>Голень</span><span class="numb">36</span><span></span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="weight_block">
+        <div class="row">
+            <div class="col col-45">
+                <h1 class="wgh">54.7 <span>кг</span></h1>
+                <img src="img/down_2.png" class="arrow">
+            </div>
+            <div class="col col-55">
+                <h3>Цель: </h3><span class="trg_whg">53.5</span>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="chart_block">
+           <canvas id="bar" class="chart chart-bar" data="data" labels="labels" legend="true" series="series" options="{showTooltips: false}"></canvas>
+      </div>
+
+  </ion-content>
+</ion-view>

@@ -1,0 +1,34 @@
+<ion-view>
+    <ion-nav-title>Жим штанги лежа</ion-nav-title>
+  <ion-content>
+      <div class="vodeo_block">
+          <img src="img/tren_pic_2.png" class="full-width">
+      </div>
+        <div class="row tren_info">
+            <div class="col col-10 lines"> </div> 
+            <div class="col col-80">
+                <h4>Текущее упражнение</h4>
+                <p>Разминочный 80% от рабочего веса</p>
+                <ul>
+                    <li><img src="img/repeats.png"> <span>10 повторений</span></li>
+                    <li><img src="img/relax.png"> <span>отдых 1 мин.</span></li>
+                </ul> 
+            </div>
+            <div class="col col-10 lines"> </div>   
+        </div>
+        <div class="tren_desc">
+            <h3>Описание</h3>
+            <div class="row">
+                <div class="col col-35" ng-controller="MediaCtrl">
+                    <a class="">
+                        <img ng-repeat="image in allImages" ng-src="{{image.src}}" class="image-list-thumb"/>
+                        <img src="img/zoom.png" class="zoom_btn" ng-click="showImages($index)">
+                    </a>
+                </div>
+                <div class="col col-65">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lectus mauris, elementum vel purus sit amet, faucibus scelerisque neque. Mauris nec felis malesuada, faucibus justo id, efficitur purus. Ut viverra turpis metus, at sollicitudin massa pretium at. Nulla vel lacus non est laoreet ultrices. Mauris ac nisl id nulla pulvinar.</p>
+                </div>
+            </div>
+        </div>
+  </ion-content>
+</ion-view>

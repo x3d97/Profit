@@ -1,0 +1,107 @@
+<ion-view>
+  <ion-nav-title>Мой Профиль</ion-nav-title>
+  <ion-content ng-controller="MyContr">
+
+
+
+
+
+
+
+
+      <div class="top_block">
+        <div class="row">
+            <div class="col col-40">
+                <img src="img/pic.png" class="mnu_avatar">
+            </div>
+            <div class="col col-60">
+                <h3>{{name}}<br>Атлетова</h3>
+                <hr>
+                <p>возраст
+: <span>29</span> город: <span>Москва</span></p>
+                <p>подписка до <span>{{update}}</p>
+                <p>куратор: <span>{{cname}}</span></p>
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+      <div class="info_cards">
+        <div class="card">
+          <div class="item item-text-wrap">
+            <h3>Цели на</h3>
+            <div class="row">
+                <div class="col col-20"><p>День:</p></div>
+                <div class="col col-55 complete"> </div>
+                <div class="col col-25 not_complete"> </div>
+            </div>
+            <div class="row">
+                <div class="col col-20"><p>Неделю:</p></div>
+                <div class="col col-25 complete"> </div>
+                <div class="col col-55 not_complete"> </div>
+            </div>
+            <div class="row">
+                <div class="col col-20"><p>Месяц:</p></div>
+                <div class="col col-50 complete"> </div>
+                <div class="col col-30 not_complete"> </div>
+            </div>
+              <div class="info_card_footer">мой прогресс <span class="pull-right"><img src="img/progress_1.png"></span></div>
+          </div>
+        </div>
+        <div class="row second_row">
+            <div class="col col-51">
+                <div class="card left_small">
+                  <div class="item item-text-wrap">
+                    <p>Далее:</p>
+                    <h2>Силовая тренировка</h2>
+                    <hr>
+                    <span>Май 24 2016</span><span class="pull-right"><img src="img/calendar_1.png"></span>
+                  </div>
+                </div>
+            </div>
+            <div class="col col-51">
+                <div class="card right_small">
+                  <div class="item item-text-wrap">
+                    <p>Купить продукты</p>
+                    <label><input type="checkbox"/> Гречка</label>
+                    <label><input type="checkbox"/> Грудка</label>
+                    <label><input type="checkbox"/> Белая рыба</label>
+                    <label><input type="checkbox"/> Молоко</label>
+                    <hr>
+                    <span>Заметки</span><span class="pull-right"><img src="img/pen_1.png"></span>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="row">
+                <div class="col col-50">
+                    <!--unknown shit-->
+                </div>
+                <div class="col col-50 right_part">
+                    <div class="item">
+                        <p>Вес</p>
+                    </div>
+                    <h1 class="wgh">51,4 <span>кг</span></h1>
+                    <a href="#" class="change_btn">Изменить</a>
+                    <img src="img/progress_1.png">
+                </div>
+            </div>
+        </div>
+        <div class="add"><img src="img/plus.png"></div>
+      </div>
+  </ion-content>
+</ion-view>

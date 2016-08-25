@@ -1,0 +1,119 @@
+<ion-view >
+    <ion-nav-title>Чат с куратором</ion-nav-title>
+    <ion-content ng-controller="Chat" class="chat_page" on-swipe-left="hideTime = false" on-swipe-right="hideTime = true">
+
+
+
+
+
+
+    </div>
+    <div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px; transform-origin: center top 0px;"></div>
+  </div>
+
+
+
+
+
+
+        <div class="row msg">
+            <div class="msg_block">
+              <span>ячччяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя!</span><br>
+              <span class="msg_time">Jun 9, 10:20</span>
+            </div>
+            <div class="avatar">
+                <img src="img/pic.png" class="mnu_avatar">
+            </div>
+        </div>
+        <div class="row ans">
+            <div class="avatar">
+                <img src="img/trainer.png" class="mnu_avatar">
+            </div>
+            <div class="ans_block">
+                <span>Привет! aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</span><br>
+                <span class="msg_time">Jun 9, 10:20</span>
+            </div>
+        </div>
+        <div class="row msg">
+            <div class="msg_block">
+              <span>Можно начинать?</span><br>
+              <span class="msg_time">Jun 9, 10:20</span>
+            </div>
+            <div class="avatar">
+                <img src="img/pic.png" class="mnu_avatar">
+            </div>
+        </div>
+        <test items='items'></test>
+
+        <div class="row ans">
+            <div class="avatar">
+                <img src="img/trainer.png" class="mnu_avatar">
+            </div>
+
+            <div class="ans_block">
+                <span>NO!</span><br>
+                <span class="msg_time">Jun 9, 10:20</span>
+            </div>
+        </div>
+        <div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+
+    <div ng-repeat="message in messages" ng-class="{other: message.userId != myId}" class="messages">
+      <div class="row msg">
+        <div class="msg_block">
+          <span>{{ message.text }}</span>
+          <br><span class="msg_time">Jun 9, 10:20</span>
+        <div class="avatar">
+            <img src="img/pic.png" class="mnu_avatar">
+        </div>
+        </div>
+        </div>
+
+      </div>
+
+
+
+
+
+        </div>
+        <div ng-repeat="message in messages" ng-class="{other: message.userId != myId}" class="messages other">
+
+
+
+
+
+      </div>
+
+
+
+              <ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+                <label class="item-input-wrapper">
+                  <input type="text" placeholder="Type your message" on-return="sendMessage(); closeKeyboard()" ng-model="data.message" on-focus="inputUp()" on-blur="inputDown()" />
+                </label>
+                <button class="button button-clear" ng-click="getmessage(); sendMessage()">
+                  Send
+                </button>
+              </ion-footer-bar>
+
+
+
+
+
+
+  </ion-content>
+<ion-footer-bar keyboard-attach class="bar-stable item-input-inset">
+
+
+    </div>
+    <div class="scroll-bar scroll-bar-v"><div class="scroll-bar-indicator scroll-bar-fade-out" style="transform: translate3d(0px, 0px, 0px) scaleY(1); height: 0px; transform-origin: center top 0px;"></div>
+  </div>
+
+    <label class="item-input-wrapper">
+
+
+
+
+        <input type="text" placeholder="Введите текст сообщения" on-return=" sendMessage(); closeKeyboard()" ng-model="data.message" on-focus="inputUp()" on-blur="inputDown()"/>
+    </label>
+    <button class="send_button"><img src="img/send.png" ng-click="sendMessage()"></button>
+</ion-footer-bar>
+</ion-view>
